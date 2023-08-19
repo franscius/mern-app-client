@@ -1,0 +1,84 @@
+.navbar {
+
+  height: 100px;
+  background-color: #1b1a1a;
+  display: flex;
+  justify-content: center;
+
+}
+
+.navContainer {
+
+  width: 60%;
+  max-width: 1000px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+}
+
+.logo:hover {
+  transform: scale(1.04);
+
+}
+
+.logo2:hover {
+  transform: scale(1.04);
+}
+
+.logo2 {
+  height: 50px;
+  width: 50px;
+  border-radius: 100px;
+}
+
+.navButton {
+  margin-left: 10px;
+  padding: 8px 20px;
+  cursor: pointer;
+  color: white;
+  border-radius: 10px;
+  border: #0071c2;
+  background-color: rgb(14, 100, 230);
+}
+
+.prologo {
+  height: 25px;
+  width: 25px;
+}
+
+.homename {
+  font-weight: 200px;
+  font-size: 10px;
+  padding-left: 25px;
+  padding-top: 0px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+
+.username {
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: capitalize;
+}
+
+.username:hover {
+  transform: scale(1.04);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  margin-right: 20px;
+  position: relative;
+}
+
+.navButton:hover {
+  transform: scale(1.04);
+}
