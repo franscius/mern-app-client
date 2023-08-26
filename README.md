@@ -1,4 +1,4 @@
-12 - May - 2022
+
 
 # Client | side dependencies...
 |No| Package Installs       | Usage for...                                    |
@@ -13,4 +13,3 @@
 | 8| yarn add `@fortawesome/free-solid-svg-icons`   | icons |
 | 9| yarn add `@fortawesome/free-regular-svg-icons` | icons |
 
-Learning by inspired from[.](https://youtu.be/RkWpJ4XUHuw)
