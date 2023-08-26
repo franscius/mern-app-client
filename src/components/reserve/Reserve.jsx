@@ -2,7 +2,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faCircleXmark } from "@fortawesome/free-solid-svg-icons";
 import "./reserve.css";
 import useFetch from "../../hooks/useFetch.js";
-import { useContext, useState } from "react";
+import { useContext, useState, useEffect } from "react";
 import { SearchContext } from "../../context/SearchContext";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
@@ -14,8 +14,14 @@ const Reserve = ({ setOpen, hotelId }) => {
   const [pr, setpr] = useState("");
 
 
-  const { data } = useFetch(`/hotels/room/${hotelId}`);
-
+    const [data,setData] = useState([]);
+  const getApi = async ()=>{
+    const data =  await instance.get(`/hotels/room/${hotelId}`);
+    setData(data?.data)
+  }
+  useEffect(()=>{
+    getApi()
+  },[])
   const { dates, options } = useContext(SearchContext)
   const MILLISECONDS_PER_DAY = 1000 * 60 * 60 * 24;
   function dayDifference(date1, date2) {
