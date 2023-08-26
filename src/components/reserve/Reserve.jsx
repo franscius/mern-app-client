@@ -6,6 +6,7 @@ import { useContext, useState, useEffect } from "react";
 import { SearchContext } from "../../context/SearchContext";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
+import instance from '../../utils/BaseUrl';
 
 const api = axios.create({ baseURL: 'https://gold-elegant-bison.cyclic.cloud/api' });
 
@@ -14,9 +15,9 @@ const Reserve = ({ setOpen, hotelId }) => {
   const [pr, setpr] = useState("");
 
 
-    const [data,setData] = useState([]);
+  const [data,setData] = useState([]);
   const getApi = async ()=>{
-    const data =  await instance.get(`/hotels/room/${hotelId}`);
+  const data =  await instance.get(`/hotels/room/${hotelId}`);
     setData(data?.data)
   }
   useEffect(()=>{
