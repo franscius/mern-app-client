@@ -8,13 +8,11 @@
 
 .pListItem{
   flex:1;
-  border-radius: 10px;
   overflow: hidden;
   cursor: pointer;
 }
 
 .pListImg{
-  border-radius: 10px;
   width: 100%;
   height: 150px;
   object-fit: cover;
