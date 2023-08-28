@@ -30,7 +30,7 @@ const Hotel = () => {
   const navigate = useNavigate();
   const [data, setData, ] = useState([]);
   const getApi = async () => {
-    const data = await instance.get(`/hotel/find/${id}`)
+    const data = await instance.get(`/hotels/find/${id}`)
     setData(data?.data)
   }
   useEffect(() => {
