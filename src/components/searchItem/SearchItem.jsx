@@ -8,7 +8,7 @@ const SearchItem = ({ item }) => {
       <div className="siDesc">
         <h1 className="siTitle">{item.name}</h1>
         <span className="siDistance">{item.distance} km from center</span>
-        <span className="siTaxiOp">Free airport taxi</span>
+        <span className="siTaxiOp"></span>
         <span className="siSubtitle">
           Studio Apartment with Air conditioning
         </span>
