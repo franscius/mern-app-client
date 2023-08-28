@@ -42,6 +42,7 @@
   height: 30px;
   border: none;
   padding: 5px;
+  text-transform: capitalize;
 }
 .lsItem>span{
   height: 30px;
