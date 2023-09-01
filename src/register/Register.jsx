@@ -181,7 +181,7 @@ const Register = () => {
                 borderRadius: "5px",
               }}
               type="text"
-              placeholder="Country"
+              placeholder="Gender"
               id="country"
               onChange={handleChange}
               required
